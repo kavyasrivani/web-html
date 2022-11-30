@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DBMS Project</title>
+        <meta name="description" content="Bon Voyage Travells is India's largest operator of regularly scheduled buses. ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="w3-panel w3-white w3-round-xlarge">
+            <h1 style="color: saddlebrown;font-size:60px">Bon Voyage Travels</h1>
+        </div>
+        <center>
+            <p>With a 61% market share, Bon Voyage Travells is India's largest operator of regularly scheduled buses. It runs more than 220 bus services and has a fleet of more than 3,400 buses.</p>
+        </center>
+        <br>
+        <h1 style="color: firebrick; border:white; border-width:5px; border-style:groove;">Drives you safe.....</h1>
+        <br>
+        <center>
+        <button class="button button1">Home</button>
+        <button class="button button1">Bus</button>
+        <button class="button button1">Helpful information</button>
+        <button class="button button1">Talk to us</button>
+        <button class="button button1">Reaching Out</button>
+        </center>
+        <br>
+        <center>
+        <table>
+            <tr>
+                <td>
+        <h2>Choose your sevice</h2>
+        <form action="/Service/BusService" id="busservice-info-form" method="get" role="form">
+            <h3>Service type</h3>
+            <div class="radio">
+            <input type="radio" name="Basic" id="basic">
+            <label for="basic">Basic</label>
+            <br>
+            <input type="radio" name="Non Basic" id="non_basic">
+            <label for="non_basic">Non Basic</label>
+            </div>
+            <h3>Service No.</h3>
+            <div class=""></div>
+            <select class="selectpicker" data-live-search="true" data-live-search-placeholder="Type here to Search" data-size="10" data-val="true" data-val-length="The field ServiceNo must be a string with a maximum length of 50." data-val-length-max="50" id="ServiceNo" name="ServiceNo" required="required" tabindex="-98">
+                <option value="abc">Select Service No</option>
+                <option value="abc">abc</option>
+                <option value="def">def</option>   
+            <button type="button" class="" data-toggle="dropdown" role="button" data-id="ServiceNo" title="Select Service No." aria-expanded="true">Select Service No</button>
+            </select>
+            <br>
+            <div class="submit">
+            <button type="submit" class="btn-1 btn-block">View Bus Service Details</button>
+        </div>
+        </form>
+        </td>
+        <td>
+            <h2>Estimate Arrival Time</h2>  
+        <form action="/Service/BusService" id="busservice-info-form" method="get" role="form">
+        <h3>Service No.</h3>
+            <select class="selectpicker" data-live-search="true" data-live-search-placeholder="Type here to Search" data-size="10" data-val="true" data-val-length="The field ServiceNo must be a string with a maximum length of 50." data-val-length-max="50" id="ServiceNo" name="ServiceNo" required="required" tabindex="-98">
+                <option value="abc">Select Service No</option>
+                <option value="abc">abc</option>
+                <option value="def">def</option>   
+            <button type="button" class="" data-toggle="dropdown" role="button" data-id="ServiceNo" title="Select Service No." aria-expanded="true">Select Service No</button>
+            </select>
+            <h3>Bus Stop No.</h3>
+            <div class=""></div>
+            <select class="selectpicker" data-live-search="true" data-live-search-placeholder="Type here to Search" data-size="10" data-val="true" data-val-length="The field ServiceNo must be a string with a maximum length of 50." data-val-length-max="50" id="ServiceNo" name="ServiceNo" required="required" tabindex="-98">
+                <option value="abc">Bus Stop No</option>
+                <option value="abc">123</option>
+                <option value="def">456</option>   
+            <button type="button" class="" data-toggle="dropdown" role="button" data-id="ServiceNo" title="Bus Stop No." aria-expanded="true">Bus Stop No</button>
+        </select>
+        <br>
+        <div class="submit">
+        <button type="submit" class="">Estimate Arrival Time</button>
+    </div>
+        </form>
+        </td>
+        </tr>
+        </table>
+    </center>
+        <script src="" async defer></script>
+    </body>
+
+
+
+<style>
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  } 
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 8px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  
+  body {
+    background-image: url('https://wallpaperaccess.com/full/1628627.jpg');
+  }
+  
+  h1 {text-align: center;}
+.radio{
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    vertical-align: top;
+    width: 50%;
+}
+h3{
+    color: #150050;
+}
+.radio:hover {
+    background-color: #ccc;
+  }
+
+  table {
+    border-collapse: collapse;
+}
+
+td {
+                width:29.78%;
+                padding:5%;
+                border:3px solid rgb(8, 80, 23);
+                background-color: rgb(247, 244, 244);
+            }
+.submit{
+    border-radius: 5px;
+    border: none; 
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+</style>
+
+
+
+</html>
